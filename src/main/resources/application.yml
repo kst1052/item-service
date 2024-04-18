@@ -1,0 +1,17 @@
+
+logging:
+  file:
+    name: logs/api.log
+  level:
+    root: info
+    org.msa.item: debug
+  logback:
+    rolling policy:
+      max-file-size: 500MB
+      max-history: 10
+spring:
+  datasource:
+    url: jdbc:mariadb://localhost:3316/msa
+    driver-class-name: org.mariadb.jdbc.Driver
+    username: root
+    password: 1234
